@@ -8,15 +8,14 @@ package com.rizwan;
 public class EntryPoint {
 
 	public static void main(String[] args) throws AlgoCantHelpException {
-		
-		
+
 		if (args.length < 1) {
 			System.out.println("Usage: java -jar <numberOfPrimes>");
 			System.exit(0);
 		}
-		
+
 		int numberOfPrimes = 0;
-		
+
 		try {
 			numberOfPrimes = Integer.parseInt(args[0]);
 		} catch (NumberFormatException ex) {
@@ -24,8 +23,7 @@ public class EntryPoint {
 			System.exit(0);
 		}
 		if (numberOfPrimes <= 0) {
-			System.out
-					.println("Not a valid input, please enter a number greater than 0");
+			System.out.println("Not a valid input, please enter a number greater than 0");
 			System.exit(0);
 		}
 
